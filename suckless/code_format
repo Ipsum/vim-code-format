@@ -1,0 +1,3 @@
+#!/bin/sh
+indent -brs -nprs -npcs -i8 -fc1 -br -brf -nsaf -nsai -nsaw -ncs \
+        -nfca -il0 -ce -nss -c0 -cd0 -ut - 2>/dev/null -gnu;true | sed -E 's/([^\t]+)\t+\/\*/\1 \/*/g' | sed 's/switch (/switch(/g'
