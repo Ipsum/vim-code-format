@@ -1,2 +1,2 @@
 # vim-code-format
-Code formatters for various styles of code formatting
+Add vimrc.snippet to your .vimrc (or source it) and then copy the files for the formatter you want into the root of your repo or folder.
