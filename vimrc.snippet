@@ -5,6 +5,8 @@ let vimrc_path = fnamemodify(findfile(".vimrc", file_cwd.";"), ':p')
 
 if !empty(glob(vimrc_path))
         if fnameescape(vimrc_path) != fnameescape($MYVIMRC)
-                exec ':source '.fnameescape(vimrc_path)
+                if fnamemodify(vimrc_path,':t') == ".vimrc"
+                        exec ':source '.fnameescape(vimrc_path)
+                endif
         endif
 endif
